@@ -17,8 +17,8 @@
 
     <form action="https://register-demo.freecodecamp.org" method="post">
         <fieldset>
-            <label for="first-name">Enter Your First Name: <input id="first-name" type="text" required></label>
-            <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required></label>
+            <label for="first-name" name="first-name">Enter Your First Name: <input id="first-name" type="text" required></label>
+            <label for="last-name" name="last-name">Enter Your Last Name: <input id="last-name" type="text" required></label>
             <label for="email">Enter Your Email: <input id="email" type="email" required></label>
             <label for="new-password">Create a New Password: <input id="new-password" type="password" required pattern="[a-z0-5]{8,}"></label>
         </fieldset>
@@ -28,9 +28,28 @@
             <label for="terms-and-conditions"> <input type="checkbox" required id="terms-and-conditions"> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
         </fieldset>
         <fieldset>
-            <label for="">Upload a profile picture: <input type="file"></label>
-            <label for="">Input your age (years): <input type="number" min="13" max="120"></label>
+            <!--Label para escolher uma foto-->
+            <label for="profile-picture">Upload a profile picture: <input type="file"></label>
+            <!--Label para escolher uma foto-->
+            <label for="age">Input your age (years): <input type="number" min="13" max="120"></label>
+            <!--LISTA SUSPENSA EM HTML-->
+            <label for="referrer">
+                How did you hear about us?
+            <select id="referrer">
+                <option value="">(select one)</option>
+                <option value="1">freeCodeCamp News</option>
+                <option value="2">freeCodeCamp Youtube Channel</option>
+                <option value="3">freeCodeCamp Forum</option>
+                <option value="4">Other</option>
+            </select>
+
+            </label>
+            <!--LISTA SUSPENSA EM HTML-->
+
+            <label for="bio" id="bio">Provide a bio: <textarea id="bio" cols="30" rows="3" placeholder="I like coding on the beach..."></textarea></label>
+
         </fieldset>
+
         <input type="submit" value="Submit">
     </form>
 

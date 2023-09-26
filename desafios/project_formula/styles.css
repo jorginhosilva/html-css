@@ -8,18 +8,10 @@ body {
     font-size: 16px;
 }
 
-/*label {
-    display: block;
+label {
+    display: flex;
+    align-items: center;
     margin: 0.5rem 0;
-}*/
-
-form {
-    margin: 0 auto;
-    max-width: 700px;
-    min-width: 300px;
-    width: 60vw;
-    padding: 3.5em;
-    background-color: #272746;
 }
 
 fieldset {
@@ -29,16 +21,30 @@ fieldset {
     border: none;
 }
 
-input, textarea, select {
+input, textarea {
     width: 100%;
     margin: 0;
     margin-top: 10px;
     min-height: 2em;
+    border-radius: 5px;
 }
 
 /* TODAS AS CLASSES DO CÓDIGO*/
 
+.survey-form {
+    margin: 0 auto;
+    max-width: 700px;
+    min-width: 300px;
+    width: 60vw;
+    padding: 3.5em;
+    background-color: #272746;
+}
 
+.dropdown {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
 
 /* TODAS AS CLASSES DO CÓDIGO*/
 

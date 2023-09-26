@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário FreeCodeCamp</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Formulário de Pesquisa</title>
 </head>
 <body>
-    <h1 id="title">
+    
+    <h1 id="title" class="description-title">
         Formulário de Pesquisa FreeCodeCamp
     </h1>
 
-    <p id="description">
+    <p id="description" class="description-title">
+        
         Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma
     </p>
 
-    <fieldset>
-    <form id="survey-form" class="survey-form">
-        <label for="">Nome: <input type="text" placeholder="Digite seu nome" id="name"></label>
+    <form action="" id="survey-form" class="survey-form">
+        <label for="" id="name-label">Nome<input type="text" id="name" class="name" placeholder="Digite seu nome" required></label>
+        <label for="" id="email-label">Email <input type="email" id="email" class="email" placeholder="Digite seu email" required></label>
+        <label for="" id="number-label">Idade (opcional) <input type="number" class="number" placeholder="Idade" id="number" class="number" min="13" max="120"></label>
 
-        <label for="">Email: <input type="text" placeholder="Digite seu email" id="name"></label>
-
-        <label for="age">Idade: <input type="number" min="13" max="120" name="age"></label>
-
-        <label for="">Qual opção melhor descreve sua função atual?</label>
+        <p>
+            Qual opção melhor descreve sua função atual?
+        </p>
 
         <select name="" id="dropdown" class="dropdown">
             <option value="">Selecione a função atual</option>
@@ -38,12 +39,11 @@
             Você recomendaria o freeCodeCamp a um amigo?
         </p>
 
-        <div class="recomendar">
+        <div class="form-group">
 
-        <label for=""><input type="radio"> Definitivamente</label>
-        <label for=""><input type="radio">Talvez</label>
-        <label for=""><input type="radio">Não tenho certeza</label>
-
+            <label for=""><input type="radio" value="definitivamente" class="botao-radio" name="user recomend" type="checkbox"> Definitivamente</label>
+            <label for=""><input type="radio" value="talvez" class="botao-radio" name="user recomend" type="checkbox"> Talvez</label>
+            <label for=""><input type="radio" value="nao-sei" class="botao-radio" name="user recomend" type="checkbox"> Não tenho certeza</label>
         </div>
 
         <p>
@@ -62,17 +62,17 @@
             O que você gostaria que fosse melhorado? (Marque todas as opções que desejar)
         </p>
 
-        <label for=""><input type="checkbox">Projetos Front-end</label>
-        <label for=""><input type="checkbox">Projetos Back-end</label>
-        <label for=""><input type="checkbox">Visualização de Dados</label>
-        <label for=""><input type="checkbox">Desafios</label>
-        <label for=""><input type="checkbox">Comunidade Open Source</label>
-        <label for=""><input type="checkbox">Salas de ajuda no Gitter</label>
-        <label for=""><input type="checkbox">Videos</label>
-        <label for=""><input type="checkbox">Encontros</label>
-        <label for=""><input type="checkbox">Wiki</label>
-        <label for=""><input type="checkbox">Fóruns</label>
-        <label for=""><input type="checkbox">Cursos Adicionais</label>
+        <label for=""><input type="checkbox" value="projetos-front-end">Projetos Front-end</label>
+        <label for=""><input type="checkbox" value="projetos-back-end">Projetos Back-end</label>
+        <label for=""><input type="checkbox" value="visualiza-dados">Visualização de Dados</label>
+        <label for=""><input type="checkbox" value="desafios">Desafios</label>
+        <label for=""><input type="checkbox" value="comunidade">Comunidade Open Source</label>
+        <label for=""><input type="checkbox" value="salas">Salas de ajuda no Gitter</label>
+        <label for=""><input type="checkbox" value="videos">Videos</label>
+        <label for=""><input type="checkbox" value="encontros">Encontros</label>
+        <label for=""><input type="checkbox" value="wiki">Wiki</label>
+        <label for=""><input type="checkbox" value="foruns">Fóruns</label>
+        <label for=""><input type="checkbox" value="cursos">Cursos Adicionais</label>
 
         <p>
             Algum comentário ou sugestão?
@@ -80,10 +80,9 @@
 
         <label for="bio" id="bio"><textarea id="bio" cols="30" rows="3" placeholder="Digite o seu comentário aqui..." name="bio"></textarea></label>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id="submit">
 
     </form>
-    </fieldset>
 
 </body>
 </html>

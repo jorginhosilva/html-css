@@ -1,22 +1,24 @@
+* {
+    box-sizing: inherit;
+    font-size: 10px;
+}
 body {
     background-color: #3d348d;
     color: #f5f6f7;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: 1.7rem;
 }
 
 label {
     display: block;
     margin: 0.5rem 0;
     margin-bottom: 0.8rem;
-}
-
-input, select {
     width: 100%;
-    margin: 10px 0 0 0;
+    font-size: 1.7rem;
 }
 
 select {
@@ -26,6 +28,7 @@ select {
 textarea {
     width: 100%;
     height: 8rem;
+    border-radius: 0.5rem;
 }
 
 /*TODAS AS CLASS DO CÓDIGO CSS*/
@@ -62,64 +65,36 @@ textarea {
     min-width: 1.25rem;
 }
 
-.name {
+.input, option {
     display: block;
     width: 100%;
     height: 1.5rem;
     border-radius: 0.25rem;
     border: 1px solid #ced4da;
-    padding: 0.375rem 0.75rem;
+    padding: 1.3rem 1.5rem;
     color: #495057;
     background-color: #fff;
-    font-size: 1rem;
-}
-
-.email {
-    display: block;
-    width: 100%;
-    height: 1.5rem;
-    border-radius: 0.25rem;
-    border: 1px solid #ced4da;
-    padding: 0.375rem 0.75rem;
-    color: #495057;
-    background-color: #fff;
-    font-size: 1rem;
-}
-
-.number {
-    display: block;
-    width: 100%;
-    height: 1.5rem;
-    border-radius: 0.25rem;
-    border: 1px solid #ced4da;
-    padding: 0.375rem 0.75rem;
-    color: #495057;
-    background-color: #fff;
-    font-size: 1rem;
-}
-
-.dropdown {
-    display: flex;
-    width: 100%;
-    height: 2.2rem;
-    border-radius: 0.25rem;
-    border: 1px solid #ced4da;
-    padding: 0.375rem 0.75rem;
-    color: #495057;
-    background-color: #fff;
+    font-size: 1.7rem;
+    margin: 10px 0 0 0;
 }
 
 .botao-submit {
     display: block;
     width: 100%;
-    padding: 0.75rem;
+    padding: 1.5rem;
     border: none;
     border-radius: 2px;
     cursor: pointer;
     background-color: #37AF65;
-    padding: 1rem;
-    font-size: inherit;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    text-transform: uppercase;
     color: #ced4da;
+    margin-top: 1.5rem;
 }
 
 /*TODAS AS ID's DO CÓDIGO CSS*/
+
+#title {
+    font-size: 1.6rem;
+}

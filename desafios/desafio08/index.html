@@ -131,10 +131,53 @@
                 <h2 id="css-questions">
                     CSS Questions
                 </h2>
-            </section>
 
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="cliente">
+                            Você é um desenvolvedor frontend?
+                        </label>
+                    </div>
+
+                    <div class="answer">
+                        <select name="cliente" id="cliente" required>
+                            <option value="">
+                                Selecione uma opção
+                            </option>
+                            <option value="Sim">
+                                Sim
+                            </option>
+                            <option value="Nao">
+                                Não
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="question-block">
+                        <label for="css-question">
+                            Você tem alguma pergunta: 
+                        </label>
+                    </div>
+
+                    <div class="answer">
+                        <textarea name="css-questions" id="css-questions" cols="30" rows="10" placeholder="O que é flexbox..."></textarea>
+                    </div>
+
+                </div>
+
+            </section>
+            <button type="submit">Enviar</button>
         </form>
     </main>
+
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
 
 </body>
 </html>

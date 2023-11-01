@@ -17,9 +17,9 @@
 
         <nav>
             <ul>
-                <li><a href="#student-info">INFO</a></li>
-                <li><a href="#html-questions">HTML</a></li>
-                <li><a href="#css-questions">CSS</a></li>
+                <li><a href="#student-info" accesskey="a">INFO</a></li>
+                <li><a href="#html-questions" accesskey="b">HTML</a></li>
+                <li><a href="#css-questions" accesskey="c">CSS</a></li>
             </ul>
         </nav>
 
@@ -35,28 +35,28 @@
 
                 <div class="info">
                     <label for="nome-aluno">
-                        Nome do Aluno
+                        Nome:
                     </label>
 
-                    <input type="text" name="text" id="nome-aluno">
+                    <input type="text" name="nome-aluno" id="nome-aluno">
 
                 </div>
 
                 <div class="info">
                     <label for="endereco-email">
-                        Endereço de Email
+                        Email:
                     </label>
 
-                    <input type="" id="endereco-email">
+                    <input type="email" name="endereco-email" id="endereco-email">
 
                 </div>
 
                 <div class="info">
                     <label for="data-nascimento" >
-                        Data de Nascimento <span class="sr-only">(Data de Nascimento)</span>
+                        D.O.B: <span class="sr-only">(Data de Nascimento)</span>
                     </label>
 
-                    <input type="" id="data-nascimento">
+                    <input type="date" name="data-nascimento" id="data-nascimento">
 
                 </div>
 
@@ -77,7 +77,7 @@
                             O elemento legend representa uma legenda para o conteúdo de seu elemento do conjunto de campos pai.
                         </legend>
 
-                        <ul>
+                        <ul class="answers-list">
                             <li>
                                 <label for="q1-a1">
                                     <input type="radio" id="q1-a1" value="Verdadeiro" name="Verdadeiro">
@@ -106,7 +106,7 @@
                             Um elemento de rótulo aninhando um elemento de entrada deve ter um for atributo com o mesmo valor do id da entrada.
                         </legend>
 
-                        <ul>
+                        <ul class="answers-list">
                             <li>
                                 <label for="q2-a1">
                                     <input type="radio" id="q2-a1" value="Verdadeiro" name="Verdadeiro2">

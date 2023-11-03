@@ -4,17 +4,35 @@ body {
 
 main {
     background-color: #EEE;
-    text-align: center;
     padding: 1rem;
     margin: 0.9rem;
+    border-radius: 0.5em;
 }
 
-/* TODAS AS CLASS DO CÓDIGO */
+main p {
+    text-align: center;
+}
 
-.title {
+figure img{
+    max-width: 100%; 
+    display: block;
+    height: auto;
+    margin: 0 auto ;
+ }
+
+/* TODAS AS ID'S DO CÓDIGO */
+
+#title {
     color: #333333;
     font-size: 2.5rem;
     margin-top: 0;
+    text-align: center;
 }
 
-/* TODAS AS CLASS DO CÓDIGO */
+#img-caption {
+    font-size: 0.8em;
+    padding-top: 0.8em;
+    text-align: center;
+}
+
+/* TODAS AS ID'S DO CÓDIGO */

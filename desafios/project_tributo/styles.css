@@ -20,6 +20,14 @@ figure img{
     margin: 0 auto ;
  }
 
+ul {
+    text-align: left;
+}
+
+li {
+    padding: 10px;
+}
+
 /* TODAS AS ID'S DO CÓDIGO */
 
 #title {
@@ -33,6 +41,12 @@ figure img{
     font-size: 0.8em;
     padding-top: 0.8em;
     text-align: center;
+}
+
+#headline {
+    padding-top: 1.5em;
+    text-align: center; 
+    font-weight: bold;
 }
 
 /* TODAS AS ID'S DO CÓDIGO */

@@ -46,8 +46,7 @@ cite {
 
 .comentarios h1 {
     text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
+    white-space: wrap;
 }
 
 .title {
@@ -104,3 +103,10 @@ cite {
 }
 
 /* TODAS AS ID'S DO CÓDIGO */
+
+@media (max-width: 768px) {
+    .comentarios-personalidades {
+        width: 350px;
+    }
+
+}
